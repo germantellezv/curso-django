@@ -15,11 +15,9 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
-
-def hello_world(request):
-    return HttpResponse('Hello World!')
+from platzigram import views
 
 urlpatterns = [
-    path('hello-world',hello_world)
+    path('hello-world',views.hello_world),
+    path('hi/',views.hi)
 ]
