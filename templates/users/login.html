@@ -9,7 +9,7 @@
     {% if error %}
         <p class="alert alert-danger">{{ error }}</p>
     {% endif%}
-
+    <center><h2> Log in </h2></center>
     <form method="POST" action="{% url "login" %}">
         {% csrf_token %}
 
