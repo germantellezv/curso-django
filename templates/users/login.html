@@ -1,7 +1,7 @@
 {% extends "users/base.html" %}
 
 {% block head_content %}
-<title>Platzigram sign in</title>
+<title>Platzigram login</title>
 {% endblock%}
 
 {% block container %}
@@ -9,7 +9,7 @@
     {% if error %}
         <p class="alert alert-danger">{{ error }}</p>
     {% endif%}
-    <center><h2> Log in </h2></center>
+    <center><h5> Accede a tu cuenta </h5></center>
     <form method="POST" action="{% url "login" %}">
         {% csrf_token %}
 
@@ -22,7 +22,7 @@
         </div>
 
 
-        <button class="btn btn-primary btn-block mt-5" type="submit">Sign in!</button>
+        <button class="btn btn-primary btn-block mt-5" type="submit">Login</button>
 
     </form>
 
