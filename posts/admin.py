@@ -10,10 +10,15 @@ from posts.models import Post
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('pk','title','photo','modified','created')
+    list_display = ('pk','title','user','photo','modified','created')
+    list_display_links = ('pk','title')
+    list_filter = ('created',)
+
     # Opciones por implementar
     """ list_display_links = ('pk','user')
+    list_display_links = ('pk','user')
     list_editable = ('phone_number','website','picture')
+
     search_fields = (
         'user__username',
         'user__email',
