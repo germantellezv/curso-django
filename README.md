@@ -1,6 +1,6 @@
 # Platzigram
 
-This project was made with the purpose of understand how to work with Django.
+This project was made with the purpose of learn how to work with Django.
 
 # Usage
 1. Clone this repo
